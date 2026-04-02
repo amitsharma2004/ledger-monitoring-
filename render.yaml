@@ -18,3 +18,5 @@ services:
         sync: false
       - key: JWT_EXPIRES_IN
         value: 24h
+      - key: FRONTEND_URL
+        sync: false
