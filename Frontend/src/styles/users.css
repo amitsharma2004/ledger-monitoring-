@@ -1,0 +1,33 @@
+/* ===== Users Page ===== */
+.users-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.user-name {
+  font-weight: 500;
+  color: #1e293b;
+}
+
+.role-select {
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 4px 8px;
+  background: #ffffff;
+  font-size: 0.8125rem;
+  color: #1e293b;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.15s;
+  font-family: inherit;
+}
+
+.role-select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59,130,246,0.1);
+}
+
+.role-select:hover {
+  border-color: #94a3b8;
+}

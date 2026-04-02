@@ -1,0 +1,50 @@
+/* ===== Records Page ===== */
+.records-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ===== Filters Bar ===== */
+.filters-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.07), 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.filters-bar input,
+.filters-bar select {
+  flex: 1;
+  min-width: 140px;
+  padding: 8px 12px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  color: #1e293b;
+  background: #ffffff;
+  outline: none;
+  transition: border-color 0.15s;
+  font-family: inherit;
+}
+
+.filters-bar input:focus,
+.filters-bar select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.1);
+}
+
+.filters-bar input::placeholder {
+  color: #94a3b8;
+}
+
+@media (max-width: 600px) {
+  .filters-bar input,
+  .filters-bar select {
+    min-width: 100%;
+  }
+}

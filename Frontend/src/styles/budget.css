@@ -1,0 +1,38 @@
+.budget-page { display: flex; flex-direction: column; gap: 24px; }
+
+.budget-header-actions { display: flex; gap: 12px; align-items: center; }
+.month-picker { border: 1px solid #e2e8f0; border-radius: 8px; padding: 8px 12px; font-size: 0.875rem; outline: none; background: #fff; }
+.month-picker:focus { border-color: #3b82f6; }
+
+.budget-summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.budget-stat-card { background: #fff; border-radius: 12px; padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+.budget-stat-label { font-size: 0.8125rem; color: #64748b; margin-bottom: 8px; }
+.budget-stat-value { font-size: 1.75rem; font-weight: 700; color: #1e293b; }
+.budget-stat-value.blue { color: #3b82f6; }
+
+.budget-form-card { }
+.budget-form .form-row { align-items: flex-end; }
+.budget-form .form-actions { display: flex; gap: 8px; padding-top: 4px; }
+
+.budget-categories { display: flex; flex-direction: column; gap: 16px; }
+.budget-row { padding: 16px 20px; border-radius: 10px; background: #f8fafc; border-left: 4px solid #e2e8f0; }
+.budget-row-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.budget-category { font-weight: 600; color: #1e293b; }
+.budget-status-badge { font-size: 0.75rem; font-weight: 600; padding: 3px 10px; border-radius: 12px; }
+
+.budget-bar-track { height: 8px; background: #e2e8f0; border-radius: 4px; overflow: hidden; margin-bottom: 10px; }
+.budget-bar-fill { height: 100%; border-radius: 4px; transition: width 0.4s ease; }
+
+.budget-row-numbers { display: flex; gap: 24px; flex-wrap: wrap; font-size: 0.8125rem; color: #64748b; }
+.budget-row-numbers strong { color: #1e293b; }
+
+.forecast-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.forecast-card { background: #f8fafc; border-radius: 10px; padding: 14px 16px; }
+.forecast-category { font-size: 0.8125rem; color: #64748b; margin-bottom: 6px; }
+.forecast-amount { font-size: 1.25rem; font-weight: 700; color: #1e293b; }
+.forecast-trend { font-size: 0.8125rem; font-weight: 600; margin-top: 4px; }
+.forecast-trend.increasing { color: #ef4444; }
+.forecast-trend.decreasing { color: #10b981; }
+.forecast-trend.stable { color: #6b7280; }
+
+@media (max-width: 768px) { .budget-summary, .forecast-grid { grid-template-columns: 1fr; } }
